@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Actor",
+"language": "GDScript",
+"path": "res://source/scripts/Actor.gd"
+} ]
+_global_script_class_icons={
+"Actor": ""
+}
+
 [application]
 
 config/name="Dungeon_crawler"
@@ -44,6 +54,12 @@ texture={
 "stream": false,
 "svg/scale": 1.0
 }
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemies"
+2d_physics/layer_3="World"
 
 [physics]
 
