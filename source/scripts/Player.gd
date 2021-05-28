@@ -13,7 +13,7 @@ func _physics_process(_delta):
 
 
 func direction() -> Vector2:
-	return Vector2(
+	return Vector2 (
 		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"), 
 		-1 if Input.is_action_just_pressed("ui_up") and is_on_floor() else 1
 	)
