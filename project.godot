@@ -23,6 +23,10 @@ _global_script_class_icons={
 config/name="Dungeon_crawler"
 config/icon="res://icon.png"
 
+[autoload]
+
+PlayerStats="*res://source/scenes/PlayerStats.tscn"
+
 [display]
 
 window/size/width=320
