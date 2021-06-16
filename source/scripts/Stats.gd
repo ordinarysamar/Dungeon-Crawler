@@ -6,18 +6,17 @@ onready var energy_sprite = $Limiter
 func limiterSet(limiterValue : int):
 	limiter = limiterValue
 	
-func limiterCheck() -> String:
-	var print_string = ""
+func limiterSpriteUpdate():
+	energy_sprite.set_frame(0)   #setting the frame to 0 to reset it.
 	if limiter == 5: 
-		print_string = ("you have used your first backend power and you are in backend")
+		energy_sprite.set_frame(1) # player has used the first power and is in backend	
 	if limiter == 4:
-		print_string = ("you have now returned from the backend and you have 2 backend powers left")
+		energy_sprite.set_frame(2) # player has used the first power and is out of the backend
 	if limiter == 3:
-		print_string = ("you have used your second backend power and you are in backend")
+		energy_sprite.set_frame(3) # player has used the second power and is in backend  
 	if limiter == 2:
-		print_string = ("you have now returned from the backend and you have 1 backend power left")
+		energy_sprite.set_frame(4) # player has used the second power and is out of backend 
 	if limiter == 1:
-		print_string = ("you have used your third backend power and you are in backend")
+		energy_sprite.set_frame(5) # player has used the third power and is in of backend 
 	if limiter == 0:
-		print_string = ("you have now returned from the backend and you have 0 backend power left") 
-	return print_string
+		energy_sprite.set_frame(6) # player has used the third power and is out of backend 

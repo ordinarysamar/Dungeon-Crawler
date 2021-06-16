@@ -1,3 +1,4 @@
+# FILE NAME Backend_trans.gd
 extends Node 
 
 var stats = PlayerStats
@@ -23,9 +24,8 @@ func backendPower():
 			texture.set_current_frame(1)
 		elif state == "frontend":
 			texture.set_current_frame(0)
-		
 		if Input.is_action_just_pressed("ui_accept"):
-			print(stats.limiterCheck())
+			stats.limiterSpriteUpdate()	
 	else:
 		state = "frontend"
 # if Input.is_action_just_pressed("gun safety") and safety = false:
