@@ -10,7 +10,6 @@ func _physics_process(_delta):
 	stats.limiterSet(backendLimiter)
 	backendPower()
 
-
 func backendPower():
 	if backendLimiter >= 0:
 		

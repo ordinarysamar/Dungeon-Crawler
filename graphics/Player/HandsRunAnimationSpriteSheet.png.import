@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FirstLook.png-d5d9fb0870027d1033201effd4612941.stex"
+path="res://.import/HandsRunAnimationSpriteSheet.png-1f1aadcfb9f21ab2017249cb1b9c52b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Player/FirstLook.png"
-dest_files=[ "res://.import/FirstLook.png-d5d9fb0870027d1033201effd4612941.stex" ]
+source_file="res://graphics/Player/HandsRunAnimationSpriteSheet.png"
+dest_files=[ "res://.import/HandsRunAnimationSpriteSheet.png-1f1aadcfb9f21ab2017249cb1b9c52b3.stex" ]
 
 [params]
 
